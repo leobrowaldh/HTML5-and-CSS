@@ -17,7 +17,7 @@
 @media (max-width: 600px) {
   .GridPage {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 50px repeat(3, 1fr) 30px;
+    grid-template-rows: 50px repeat(1, 1fr) 30px;
 
     grid-template-areas:
       'header header header header header header header header'

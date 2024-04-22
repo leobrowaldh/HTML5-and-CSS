@@ -9,11 +9,20 @@
         background-color: green;
       }
       img {
+        /* display:none; */
         width: 50%;
       }
       @media screen and (min-width: 768px) {
         body {
           background-color: yellow;
+        }
+        img {
+        /* display:none; */
+        width: 50%;
+        }
+        p {
+          display: inline-block;
+          vertical-align: top;
         }
       }
       @media screen and (min-width: 960px) {
@@ -21,17 +30,29 @@
           background-color: orange;
         }
         img {
-        width: 50%;
-      }
+        /* display:block; */
+        width: 100%;
+        }
+        p {
+          
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 10px;
+        }
       }
     </style>
   </head>
   <body>
     <img src="img/scones.jpg" alt="Incredible scones" />
+    <p>some nice text</p>
     <img src="img/sconesLowRes.png" alt="Incredible scones" />
+    <p>even more of that nice text here</p>
  </body>
 </html>
 <!--  Exercise: 
       1. Play with img {...} min-width, max-with, height, min-height, max-height, note difference between hiRes and LowRes image
       2. Change code so images are only visible in the largest viewport, hint use display:none, display:block
+      4. Add <p> tags after each img and add some text
+      3. use CSS properties display and vertical-align  to have the text in the <p> tags 
+        under the image for small viewports and next to the img for larger viewports
 -->
