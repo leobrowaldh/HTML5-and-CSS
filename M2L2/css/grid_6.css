@@ -1,4 +1,4 @@
-.my-first-grid {
+ .my-first-grid {
   display: inline-grid;
   grid-gap: 10px;
   grid-template-columns: [left-start] 200px [left-end center-start] 200px [center-end right-start] 200px [right-end];

@@ -41,7 +41,7 @@ p:hover {
 	position: relative;
 }
 
-/* this rull will apply when you move the curser over a tag with class="Item" */
+/* this rule will apply when you move the curser over a tag with class="Item" */
 .Item:hover {
 	background-color: lightgrey;
 	border-radius: 5%;
@@ -77,4 +77,8 @@ p:hover {
 	padding-left: .5rem;
 	font-size: 1.2rem;
 	line-height: 1.2;
+}
+
+.Item:nth-child(even) img {
+	max-height: 15rem;
 }

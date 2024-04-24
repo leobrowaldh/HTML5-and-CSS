@@ -1,4 +1,4 @@
-.GridPage {
+ .GridPage {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(8, 1fr);
@@ -43,4 +43,23 @@
 .GridItemFooter {
   grid-area: footer;
   background-color: steelblue;
+}
+
+@media screen and (max-width: 600px) {
+  .GridPage {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr) 50px;
+    grid-template-areas:
+      'header header header header header header header header'
+      'main main main main main main main main'
+      'side1 side1 side1 side1 side1 side1 side1 side1'
+      'side2 side2 side2 side2 side2 side2 side2 side2'
+      'footer footer footer footer footer footer footer footer';
+  }
+  .GridItemHeader {
+    height: 50px;
+  }
+  .GridItemFooter {
+    height: 50px;
+  }
 }

@@ -1,3 +1,14 @@
 .theGrid{
-    
+    display: grid;
+    grid-template-columns: 150px 350px 150px;
+    grid-template-rows: 100px 100px 100px 100px;
+    background-color: rgb(50, 140, 175);
+    gap: 10px;
+}
+
+[class^='grid-item']{
+    outline: 3px dashed #4e4d06;
+    font-size: 30px;
+    color: rgb(141, 197, 11);
+    text-align: center;
 }

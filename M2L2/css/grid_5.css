@@ -6,7 +6,7 @@
   background-color: #ddd;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 100px;
-  grid-auto-flow: row;   /* try row dense */
+  grid-auto-flow: row dense;   /* try row dense */
 }
 
 [class^='grid-item'] {
@@ -33,4 +33,9 @@
 
 .grid-item4 {
   grid-row: 4 / 7;
+}
+
+.grid-item10 {
+  grid-row: 8 / span 2;
+  grid-column: 3 / span 2;
 }
