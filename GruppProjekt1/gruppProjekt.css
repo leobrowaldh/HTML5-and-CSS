@@ -1,0 +1,83 @@
+.grid-page {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 65px 1fr 45px;
+    background-color:indigo;
+    grid-template-areas:
+    'nav nav nav nav nav nav'
+    'aside main main main main main'
+    'footer footer footer footer footer footer';
+    height: 100vh;
+}
+body {
+    overflow-y: hidden;
+    padding-top: 8px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+aside {
+    grid-area: aside;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    grid-area: footer;
+    background-color:aquamarine;
+    text-align: right;
+}
+.LastItem{
+    margin-top: auto;
+}
+a {
+    font-size: large;
+}
+figure img {
+    max-width: 100%;        
+}
+figure {
+    width: 10rem;
+}
+main {
+    grid-area: main;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+}
+figure:nth-child(even) {
+    width: 15rem;
+}
+a:hover {
+    font-size:x-large;
+    border: solid green;
+}
+
+@media (max-width: 600px) {
+    .grid-page {
+        grid-template-areas:
+        'nav nav nav nav nav nav'
+        'aside aside aside aside aside aside'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+        grid-template-rows: 65px 65px 1fr 45px;
+    }
+    aside {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .LastItem{
+        margin: unset;
+    }
+    main {
+        flex-direction: column;
+    }
+}

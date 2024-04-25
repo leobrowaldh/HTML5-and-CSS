@@ -21,7 +21,7 @@ body {
 	.MenuWrap {
 		flex-direction: row;	/* makes flexbox change the direction */
 		align-items: center;
-
+		
 		height: 2.75rem;
 		width: 100vw;
 	}
