@@ -6,6 +6,14 @@
   font-display: fallback;
   font-style: oblique 0deg 10deg;
 }
+@font-face {
+  font-family: 'Bitstream';
+  src: url('https://mdn.mozillademos.org/files/2468/VeraSeBd.ttf');
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url('../fonts/Pacifico-Regular.ttf');
+}
 
 :root {
   /* Font stack to ensure some generic family fonts for different browsers */
@@ -14,6 +22,8 @@
   --FontSet2: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   --FontSet3: fantasy;
   --FontCustom: 'Inter-V';
+  --FontCustom2: 'Bitstream';
+  --FontCustom3: 'pacifico';
 }
 
 /* Set up <body> to view the default font - just to know where we will land */
@@ -41,9 +51,15 @@ p.fontSet3 {
 p.fontCustom { 
   
   /* Change to custom font */
-  /*
+  
   font-family: var(--FontCustom);
-  */ 
+  
+}
+p.fontCustom2 {
+  font-family: var(--FontCustom2);
+}
+p.fontCustom3 {
+  font-family: var(--FontCustom3);
 }
 
 

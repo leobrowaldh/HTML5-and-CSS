@@ -131,7 +131,7 @@ body {
 
 
 /* Some borders to show the behaviour. Uncomment to see it in action */
-/*
+
 .trFluid_Grouping1 {
   border: 1px solid green;
   padding: 2px;
@@ -145,4 +145,6 @@ body {
   border: 1px solid blue;
   margin: 2px;
 }
-*/
+.tdFluent {
+  border: 1px black;
+}

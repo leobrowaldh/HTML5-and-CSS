@@ -1,0 +1,84 @@
+:root {
+    --cell-width: 170px;
+  }
+
+
+.tableFluid {
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .theadFluid .trFluid {
+    background-color: #FFEEDB;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .trFluid {
+    padding: 5px;
+  }
+  
+  .trFluid:nth-child(even) {
+    background-color: lightgray;
+  }
+  
+  /* Main container: initialize the flex, direction is row */
+  .trFluid {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  /* Wrappers around cells and other wrappers: flex, row, wrap */
+  .trFluid_Grouping2, 
+  .trFluid_Grouping1
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
+  .trFluid_Grouping2.num, 
+  .trFluid_Grouping1.num {
+    flex-grow: 0;
+  }
+  
+  /* Text based cells: grow, truncate and show ellipsis when there is not enough space */
+  .tdFluent {
+    flex-grow: 1; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 20px;
+    width: var(--cell-width);
+  }
+  
+  .tdFluent.num {
+    width: var(--cell-width);
+    text-align: right;
+  }
+
+/* #TODO:  media queries*/
+
+/* debugging colors:  */
+.trFluid_Grouping1 {
+    border: 1px solid green;
+    padding: 2px;
+    margin: 2px;
+  }
+  .trFluid_Grouping2 {
+    border: 1px solid red;
+    margin: 2px;
+  }
+  .trFluid:not(.header){
+    border: 1px solid blue;
+    margin: 2px;
+  }
+  .tdFluent {
+    border: 1px black;
+  }
+  

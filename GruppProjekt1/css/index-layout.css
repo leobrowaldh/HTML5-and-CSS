@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'AntonRegular';
+    src: url('../fonts/Anton-Regular.ttf');
+  }
+  :root {
+    --FontDefault: 'AntonRegular', Courier, monospace;
+    --FontColor: rgb(223, 208, 184)
+  }
+
+
 .grid-page {
     display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-rows: 65px 1fr 45px;
-    background-color:indigo;
+    background: linear-gradient( rgb(223, 208, 184), rgb(148, 137, 121));
     grid-template-areas:
     'nav nav nav nav nav nav'
     'aside main main main main main'
@@ -15,34 +25,47 @@ body {
 }
 
 nav {
+    color: var(--FontColor);
+    font-family:var(--FontDefault);
+    text-shadow: 3px 3px 2px black;
     grid-area: nav;
-    background-color: blue;
+    background-color: rgb(21, 52, 72);
     text-align: center;
     font-size: 30px;
+    padding-top: 10px;
 }
+
 aside {
+    font-family:var(--FontDefault);
+    text-shadow: 3px 3px 2px black;
     grid-area: aside;
-    background-color: brown;
+    background-color: rgb(60, 91, 111);
     display: flex;
     flex-direction: column;
-}
-footer {
-    grid-area: footer;
-    background-color:aquamarine;
-    text-align: right;
+    align-items: center;
 }
 .LastItem{
     margin-top: auto;
 }
-a {
+aside a {
+    color: var(--FontColor);
     font-size: large;
+    text-decoration: none;
 }
-figure img {
-    max-width: 100%;        
+aside a:hover {
+    font-size:x-large;
+    border: solid green;
 }
-figure {
-    width: 10rem;
+
+footer {
+    padding-top: 5px;
+    padding-right: 5px;
+    color: var(--FontColor);
+    grid-area: footer;
+    background-color:rgb(21, 52, 72);
+    text-align: right;
 }
+
 main {
     grid-area: main;
     overflow-y: scroll;
@@ -52,13 +75,6 @@ main {
     flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
-}
-figure:nth-child(even) {
-    width: 15rem;
-}
-a:hover {
-    font-size:x-large;
-    border: solid green;
 }
 
 @media (max-width: 600px) {

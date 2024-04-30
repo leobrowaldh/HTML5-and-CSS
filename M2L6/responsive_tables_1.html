@@ -87,30 +87,6 @@
             </div>
           </div>
         </div>
-
-        <div class="trFluid">
-          <div class="trFluid_Grouping2">
-            <div class="trFluid_Grouping1">
-              <div class="tdFluent">Alice</div>
-              <div class="tdFluent">Johnson</div>
-            </div>
-            <div class="trFluid_Grouping1">
-              <div class="tdFluent" title="N/A">--</div>
-              <div class="tdFluent">October 3, 1992</div>
-            </div>
-          </div>
-          <div class="trFluid_Grouping2 num">
-            <div class="trFluid_Grouping1 num">
-              <div class="tdFluent num">0</div>
-              <div class="tdFluent num">249,846</div>
-            </div>
-
-            <div class="trFluid_Grouping1 num">
-              <div class="tdFluent num">45,529</div>
-              <div class="tdFluent num">6,687</div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -118,3 +94,30 @@
 </body>
 
 </html>
+
+<!--
+  Exercises:
+  1. Switch on the borders and follow the flex boxes changing from Row to column as the viewport shrinks
+    - Do you understand?
+
+  2. Remove the 'num' class from trFluid_Grouping2 and trFluid_Grouping1. Note: you 
+     have to do it on ALL rows.
+    - Do you understand the difference
+
+  3. Remove the 2nd trFluid_Grouping2 per row so it is simply two separate trFluid_Grouping1 
+     (no longer contained in a trFluid_Grouping2)
+    - Do you understand the difference in collaps and viewport shrinks?
+
+  4. Nest one of the trFluid_Grouping1 into the trFluid_Grouping2, so that now the trFluid_Grouping2
+     contains 3 trFluid_Grouping1. Let the 4th trFluid_Grouping1 be separate outside the 
+     trFluid_Grouping2
+  
+  5. Add a page to your Application that contains a fluid table that contains
+     Book title, Author, Year, Millions sold of below books
+     
+     Collaps as viewport shrinks: [Book title], [Author Language Year Million sold]
+
+     'A Tale of Two Cities', 'Charles Dickens', 'English', '1859', '200'
+     'And Then There Were None', 'Agatha Christie', 'English', '1939', '100'
+     'Dream of the Red Chamber', 'Cao Xueqin', 'Chinese', '1791', '100 million'
+-->

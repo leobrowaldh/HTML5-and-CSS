@@ -39,7 +39,7 @@ p.fontDefault {
 .fontSet1 {
   font-family: var(--FontSet1);
   align-items: center;
-  color:rgb(254,2,8);
+  color:rgba(13, 91, 207, 0.8);
 }
 p.fontSet2 {
   font-family: var(--FontSet2);
